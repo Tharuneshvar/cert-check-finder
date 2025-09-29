@@ -14,7 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      certifications: {
+        Row: {
+          certification_id: string
+          created_at: string
+          data: Json | null
+          id: string
+        }
+        Insert: {
+          certification_id: string
+          created_at?: string
+          data?: Json | null
+          id?: string
+        }
+        Update: {
+          certification_id?: string
+          created_at?: string
+          data?: Json | null
+          id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
