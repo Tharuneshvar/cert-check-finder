@@ -1,3 +1,5 @@
+/// <reference types="https://deno.land/x/service_worker@0.1.0/lib.d.ts" />
+
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.3';
 
 const corsHeaders = {
